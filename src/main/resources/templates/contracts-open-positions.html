@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products Page - Dashboard Template</title>
+    <!--
+
+    Template 2108 Dashboard
+
+	http://www.tooplate.com/view/2108-dashboard
+
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/tooplate.css">
+</head>
+
+<body id="reportsPage" class="bg02">
+<div class="" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                    <a class="navbar-brand" href="../../../deleted/index.html">
+                        <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
+                        <h1 class="tm-site-title mb-0">Dashboard</h1>
+                    </a>
+                    <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contracts-open-positions">Contracts</a>
+                            </li>
+                            <li class="nav-item active" id="updateLinkContainer">
+                                <a class="nav-link" id="updateLink">Update</a>
+                            </li>
+
+                            <!--                            <li class="nav-item dropdown">-->
+<!--                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"-->
+<!--                                   aria-expanded="false">-->
+<!--                                    Reports-->
+<!--                                </a>-->
+<!--                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                                    <a class="dropdown-item" href="#">Daily Report</a>-->
+<!--                                    <a class="dropdown-item" href="#">Weekly Report</a>-->
+<!--                                    <a class="dropdown-item" href="#">Yearly Report</a>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item dropdown">-->
+<!--                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"-->
+<!--                                   aria-expanded="false">-->
+<!--                                    Settings-->
+<!--                                </a>-->
+<!--                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                                    <a class="dropdown-item" href="#">Profile</a>-->
+<!--                                    <a class="dropdown-item" href="#">Billing</a>-->
+<!--                                    <a class="dropdown-item" href="#">Customize</a>-->
+<!--                                </div>-->
+<!--                            </li>-->
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex" href="login.html">
+                                    <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- row -->
+        <div class="row tm-content-row tm-mt-big">
+            <div class="col-xl-4 col-lg-12 tm-md-12 tm-sm-12 tm-col">
+                <div class="bg-white tm-block h-100">
+                    <h2 class="tm-block-title d-inline-block">Categories</h2>
+                    <table class="table table-hover table-striped mt-3">
+                        <tbody>
+                        <tr>
+                            <td><a href="contracts-open-positions">1. Open Positions</a></td>
+                            <!--                                <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>-->
+                        </tr>
+<!--                        <tr>-->
+<!--                            <td>2. Pellentesque molestie</td>-->
+                            <!--                                <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>-->
+<!--                        </tr>-->
+                        </tbody>
+                    </table>
+
+                    <!--                        <a href="#" class="btn btn-primary tm-table-mt">Add New Category</a>-->
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-12 tm-md-12 tm-sm-12 tm-col">
+                <div class="bg-white tm-block h-100">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <h2 class="tm-block-title d-inline-block">Contracts</h2>
+
+                        </div>
+                        <div class="col-md-4 col-sm-12 text-right">
+                            <!--                                <a href="add-product.html" class="btn btn-small btn-primary">Add New Product</a>-->
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped tm-table-striped-even mt-3">
+                            <thead>
+                            <tr class="tm-bg-gray">
+                                <th scope="col">Contract Name</th>
+                                <th scope="col" class="text-center">Juridical Long</th>
+                                <th scope="col" class="text-center">Juridical Short</th>
+                                <th scope="col" class="text-center">Physical Long</th>
+                                <th scope="col" class="text-center">Physical Short</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                            </thead>
+                            <tbody id="openpositions">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tm-table-mt tm-table-actions-row">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="row tm-mt-small">
+            <div class="col-12 font-weight-light">
+                <p class="d-inline-block tm-bg-black text-white py-2 px-4">
+                    Copyright &copy; 2018 Admin Dashboard . Created by
+                    <a rel="nofollow" href="https://www.tooplate.com" class="text-white tm-footer-link">Tooplate</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- https://jquery.com/download/ -->
+<script src="js/bootstrap.min.js"></script>
+<!-- https://getbootstrap.com/ -->
+<script src="js/tooplate-scripts.js"></script>
+<script>
+    // $(function () {
+    //     $('.tm-product-name').on('click', function () {
+    //         window.location.href = "edit-product.html";
+    //     });
+    // })
+
+    document.getElementById('updateLink').addEventListener('click', function () {
+        fetch(baseUrl + '/api/positions/update')
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(error => console.error('Ошибка:', error))
+            .finally(function() {
+                location.reload(); // обновление страницы после запроса
+            });
+    });
+
+    var baseUrl = '.';  // Базовый URL
+    function sendFormManyContracts() {
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        $.ajax({
+            url: baseUrl + '/api/positions/contracts/' + date, type: 'GET',
+            success: function (response) {
+
+                var tableContainer = document.getElementById('openpositions');
+                response.forEach(function (item) {
+                    var row = document.createElement('tr');
+
+                    var contractName = item.contract['contract_name'];
+                    var contractId = item.contract['id'];
+                    var date = item.key['date'];
+                    console.log(date);
+                    row.setAttribute('contract_name', contractName);
+                    row.setAttribute('contract_id', contractId);
+                    row.setAttribute('date', date);
+
+                    var productNameCell = document.createElement('td');
+                    productNameCell.className = 'tm-product-name';
+                    productNameCell.innerHTML = contractName;
+                    row.appendChild(productNameCell);
+
+                    var value1Cell = document.createElement('td');
+                    value1Cell.className = 'text-center';
+                    value1Cell.innerHTML = item['juridical_long'];
+                    row.appendChild(value1Cell);
+
+                    var value2Cell = document.createElement('td');
+                    value2Cell.className = 'text-center';
+                    value2Cell.innerHTML = item['juridical_short'];
+                    row.appendChild(value2Cell);
+
+                    var value3Cell = document.createElement('td');
+                    value3Cell.className = 'text-center';
+                    value3Cell.innerHTML = item['physical_long'];
+                    row.appendChild(value3Cell);
+
+                    var value4Cell = document.createElement('td');
+                    value4Cell.className = 'text-center';
+                    value4Cell.innerHTML = item['physical_short'];
+                    row.appendChild(value4Cell);
+
+                    var dateCell = document.createElement('td');
+                    dateCell.innerHTML = item.key['date'];
+                    row.appendChild(dateCell);
+
+                    row.addEventListener('click', function () {
+                        localStorage.setItem("contract_id", row.getAttribute('contract_id'));
+                        localStorage.setItem("contract_name", row.getAttribute('contract_name'));
+                        localStorage.setItem("date", row.getAttribute('date'));
+                        window.location.href = "open-positions-charts";
+                    });
+                    tableContainer.appendChild(row);
+                });
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log('Ошибка при выполнении AJAX запроса: ' + errorThrown);
+            }
+        });
+    }
+</script>
+</body>
+</html>
+
+<script>
+    // DOM is ready
+    $(function () {
+        sendFormManyContracts();
+    })
+</script>
